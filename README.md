@@ -24,7 +24,7 @@ A powerful and minimalistic Notes App built using **React** and **Redux Toolkit*
 - **Redux Toolkit**
 - **React Redux**
 - **Tailwind CSS**
-- **Vite** (for fast development)
+- **Vite** 
 
 ---
 
