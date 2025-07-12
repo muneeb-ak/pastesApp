@@ -36,6 +36,8 @@ const Home = () => {
     if(paste.title.length !== 0  && paste.content.length !== 0){
     pasteId ? dispatch(updateToPaste(paste)) : dispatch(addToPaste(paste));
     }else{toast("Fill all fields!")}
+
+
     setTitle("");
     setValue("");
     setSearchParams({});
