@@ -35,19 +35,17 @@ const pasteSlice = createSlice({
       localStorage.removeItem("pastes");
 
     },
-    removeFromPaste : (state,action) => {
-    const paste = action.payload;
-    const index = state.pastes.findIndex((item)=> item.id === paste._id)
-    
-    if(index >= 0){
-      state.pastes.splice(index,1);
-      
-       localStorage.setItem("pastes", JSON.stringify(state.pastes));
-       toast.success("Paste Deleted");
-      }
+    removeFromPaste: (state, action) => {
+  const paste = action.payload;
+  const index = state.pastes.findIndex((item) => item._id === paste._id);
 
-    },
-   
+  if (index >= 0) {
+    state.pastes.splice(index, 1);
+    localStorage.setItem("pastes", JSON.stringify(state.pastes));
+    toast.success("Paste Deleted");
+  }
+}
+
   },
 })
 
